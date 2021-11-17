@@ -13,7 +13,11 @@ app.get('/', (req,res) =>{
     //path.join(current location, file above me)
     res.sendFile(path.join(__dirname, '../index.html'));
 
-})
+});
+
+app.get('/js', (req, res) => {
+    res.sendFile(path.join(__dirname, '../index.css'))
+  });
 
 
 
